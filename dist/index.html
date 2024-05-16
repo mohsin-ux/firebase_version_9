@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firebase_9</title>
+</head>
+
+<body>
+    <h1>Getting Starting With Firebase 9</h1>
+
+    <h2>FIrebase Firestore</h2>
+
+
+    <!-- ------- add a document------- -->
+
+    <form class="add">
+        <label for="title">Title: </label>
+        <input type="text" name="title" required>
+        <label for="author">Author: </label>
+        <input type="text" name="author">
+
+        <button>add a new book</button>
+    </form>
+    <br>
+
+    <!-- ------- delete document------- -->
+    <form class="delete">
+        <label for="id">Document ID: </label>
+        <input type="text" name="id">
+
+        <button>delete a book</button>
+    </form>
+
+    <br>
+
+    <!-- ------- update document------- -->
+
+    <form class="update">
+        <label for="id">Document ID: </label>
+        <input type="text" name="id" required>
+
+        <button>update a book</button>
+    </form>
+
+
+    <h2>Firebase Auth</h2>
+
+
+    <!-- ------- signup document------- -->
+
+    <form class="signup">
+        <label for="email">email: </label>
+        <input type="email" name="email" placeholder="EMAIL" required />
+        <label for="password">password:</label>
+        <input type="password" name="password">
+        <button>signup</button>
+    </form>
+
+<br>
+    <!-- ------- login document------- -->
+    <form class="login">
+        <label for="email">email: </label>
+        <input type="email" name="email">
+        <label for="password">password: </label>
+        <input type="password" name="password">
+        <button>login</button>
+    </form>
+<br>    
+
+    <!-- ------- logout document------- -->
+    <button class="logout">logout</button>
+
+
+    <!---------- unsubscribe the subscription ---------->
+    <h2>Unsubscribing</h2>
+
+    <button class="unsub">unsubscribe from db/ auth changes</button>
+
+
+
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>
